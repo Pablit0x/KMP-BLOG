@@ -52,7 +52,9 @@ fun LoginScreen() {
         modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center
     ) {
         Column(
-            modifier = Modifier.padding(leftRight = 50.px, top = 80.px, bottom = 24.px)
+            modifier = Modifier
+                .padding(leftRight = 50.px, top = 80.px, bottom = 24.px)
+                .borderRadius(r = 40.px)
                 .backgroundColor(Theme.LightGray.rgb),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
@@ -60,7 +62,8 @@ fun LoginScreen() {
             Image(
                 src = Res.Image.logo,
                 desc = "Logo Image",
-                modifier = Modifier.margin(bottom = 50.px, leftRight = 50.px, top = 20.px)
+                modifier = Modifier
+                    .margin(bottom = 50.px, leftRight = 50.px, top = 20.px)
                     .width(300.px)
             )
 
@@ -73,14 +76,20 @@ fun LoginScreen() {
                     .fontSize(14.px)
                     .fontFamily(FONT_FAMILY)
                     .backgroundColor(Colors.White)
-                   .toAttrs {
+                    .toAttrs {
                         attr("placeholder", "Username")
                     })
 
             Input(type = InputType.Password,
-                attrs = LoginInputStyle.toModifier().margin(bottom = 20.px).width(350.px).height(54.px)
-                    .padding(leftRight = 20.px).backgroundColor(Colors.White)
-                    .fontFamily(FONT_FAMILY).fontSize(14.px).toAttrs {
+                attrs = LoginInputStyle
+                    .toModifier()
+                    .margin(bottom = 20.px)
+                    .width(350.px).height(54.px)
+                    .padding(leftRight = 20.px)
+                    .backgroundColor(Colors.White)
+                    .fontFamily(FONT_FAMILY)
+                    .fontSize(14.px)
+                    .toAttrs {
                         attr("placeholder", "Password")
                     })
 
