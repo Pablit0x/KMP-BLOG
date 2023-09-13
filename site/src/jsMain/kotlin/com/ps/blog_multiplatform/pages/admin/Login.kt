@@ -94,9 +94,17 @@ fun LoginScreen() {
                     })
 
             Button(
-                attrs = Modifier.margin(bottom = 24.px).width(350.px).height(54.px)
-                    .backgroundColor(Theme.Primary.rgb).color(Colors.White).borderRadius(r = 4.px)
-                    .fontWeight(FontWeight.Medium).fontFamily(FONT_FAMILY).fontSize(14.px).border(
+                attrs = Modifier
+                    .margin(bottom = 24.px)
+                    .width(350.px)
+                    .height(54.px)
+                    .backgroundColor(Theme.Primary.rgb)
+                    .color(Colors.White)
+                    .borderRadius(r = 4.px)
+                    .fontWeight(FontWeight.Medium)
+                    .fontFamily(FONT_FAMILY)
+                    .fontSize(14.px)
+                    .border(
                         width = 0.px, style = LineStyle.None, color = Colors.Transparent
                     ).outline(
                         width = 0.px, style = LineStyle.None, color = Colors.Transparent
@@ -106,10 +114,12 @@ fun LoginScreen() {
             }
 
             SpanText(
-                modifier = Modifier.width(350.px).color(Colors.Red).textAlign(TextAlign.Center),
+                modifier = Modifier
+                    .width(350.px)
+                    .color(Colors.Red)
+                    .textAlign(TextAlign.Center),
                 text = errorText
             )
-
         }
     }
 }
