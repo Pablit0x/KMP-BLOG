@@ -40,6 +40,7 @@ kotlin {
         val jvmMain by getting {
             dependencies {
                 implementation(libs.kobweb.api)
+                implementation(libs.kmongo.database)
             }
         }
     }
