@@ -13,7 +13,7 @@ import org.jetbrains.compose.web.css.ms
 import org.jetbrains.compose.web.css.px
 
 val LoginInputStyle by ComponentStyle {
-    base{
+    base {
         Modifier.border(
             width = 2.px,
             style = LineStyle.Solid,

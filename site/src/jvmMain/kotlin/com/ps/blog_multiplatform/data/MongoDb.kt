@@ -10,7 +10,6 @@ import org.litote.kmongo.and
 import org.litote.kmongo.eq
 import org.litote.kmongo.reactivestreams.KMongo
 import org.litote.kmongo.reactivestreams.getCollection
-import sun.security.util.Password
 
 @InitApi
 fun initMongoDb(context: InitApiContext) {
