@@ -1,6 +1,5 @@
 package com.ps.blog_multiplatform.styles
 
-import com.ps.blog_multiplatform.models.Theme
 import com.varabyte.kobweb.compose.css.CSSTransition
 import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.graphics.Colors
