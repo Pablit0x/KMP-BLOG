@@ -56,7 +56,6 @@ import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.dom.Button
 import org.jetbrains.compose.web.dom.Input
 import org.w3c.dom.HTMLInputElement
-import org.w3c.dom.get
 import org.w3c.dom.set
 
 @Page("login")
@@ -115,7 +114,7 @@ fun LoginScreen() {
                                     username = username, password = password
                                 )
                             )
-                            if(user != null) {
+                            if (user != null) {
                                 rememberLoggedIn(remember = true, user = user)
                                 context.router.navigateTo("admin/home")
                             } else {
@@ -129,7 +128,8 @@ fun LoginScreen() {
                             errorText = ""
                         }
                     }
-                }.toAttrs()) {
+                }.toAttrs()
+            ) {
                 SpanText(text = "Sign in")
             }
 
@@ -143,7 +143,7 @@ fun LoginScreen() {
 
 private fun rememberLoggedIn(remember: Boolean, user: UserWithoutPassword? = null) {
     localStorage["remember"] = remember.toString()
-    if(user != null) {
+    if (user != null) {
         localStorage["userId"] = user.id
         localStorage["username"] = user.username
 
