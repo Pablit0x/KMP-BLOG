@@ -1,10 +1,12 @@
-<svg style="background: rgba(242, 237, 219, 0);" height="121.39999999999999px" preserveAspectRatio="xMidYMid"
-    viewBox="-11.015625 14.300000000000004 522.03125 121.39999999999999"
-    width="522.03125px" xmlns="http://www.w3.org/2000/svg">
+<svg style="background: rgba(242, 237, 219, 0);" height="121.39999999999999px"
+    preserveAspectRatio="xMidYMid"
+    viewBox="-11.015625 14.300000000000004 522.03125 121.39999999999999" width="522.03125px"
+    xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter height="300%" id="editing-vintage" width="300%" x="-100%" y="-100%">
-            <feConvolveMatrix divisor="1" in="SourceGraphic" kernelMatrix="1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1" order="9,9"
-                result="extrude"></feConvolveMatrix>
+            <feConvolveMatrix divisor="1" in="SourceGraphic"
+                kernelMatrix="1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1"
+                order="9,9" result="extrude"></feConvolveMatrix>
             <feFlood flood-color="#330a0a" result="flood-extrude"></feFlood>
             <feComposite in="flood-extrude" in2="extrude" operator="in"
                 result="extrude-color"></feComposite>
@@ -13,7 +15,8 @@
                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 "></feColorMatrix>
             <feColorMatrix in="SourceGraphic" result="fill" type="matrix"
                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 "></feColorMatrix>
-            <feConvolveMatrix divisor="1" in="stroke" kernelMatrix="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 " order="5,5"
+            <feConvolveMatrix divisor="1" in="stroke"
+                kernelMatrix="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 " order="5,5"
                 result="inner-shadow"></feConvolveMatrix>
             <feOffset dx="1" dy="1" in="inner-shadow" result="offset"></feOffset>
             <feComposite in="offset" in2="SourceAlpha" operator="in" result="comp"></feComposite>
@@ -30,8 +33,9 @@
                 <feMergeNode in="fill2"></feMergeNode>
                 <feMergeNode in="comp3"></feMergeNode>
             </feMerge>
-            <feConvolveMatrix divisor="1" in="SourceAlpha" kernelMatrix="1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1" order="9,9"
-                result="shadow"></feConvolveMatrix>
+            <feConvolveMatrix divisor="1" in="SourceAlpha"
+                kernelMatrix="1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1"
+                order="9,9" result="shadow"></feConvolveMatrix>
             <feOffset dx="15" dy="15" in="shadow" result="shadow-offset"></feOffset>
             <feFlood flood-color="#444444" result="flood-shadow"></feFlood>
             <feComposite in="flood-shadow" in2="shadow-offset" operator="in"
