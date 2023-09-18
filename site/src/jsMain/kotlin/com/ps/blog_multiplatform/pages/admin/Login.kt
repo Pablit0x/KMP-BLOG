@@ -62,7 +62,7 @@ import org.w3c.dom.set
 @Composable
 fun LoginScreen() {
     val scope = rememberCoroutineScope()
-    var errorText by remember { mutableStateOf("") }
+    var errorText by remember { mutableStateOf(" ") }
     val context = rememberPageContext()
 
     Box(
@@ -134,7 +134,7 @@ fun LoginScreen() {
             }
 
             SpanText(
-                modifier = Modifier.width(350.px).color(Colors.Red).textAlign(TextAlign.Center),
+                modifier = Modifier.width(350.px).fontFamily(FONT_FAMILY).color(Colors.Red).textAlign(TextAlign.Center),
                 text = errorText
             )
         }
